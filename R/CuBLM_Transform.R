@@ -27,7 +27,7 @@ CuBLM <- function(x) {
 
   #Need to check units and make sure they are converted properly
   x <- AWQMSdata::unit_conv(x,"Temperature, water","deg F","deg C")
-  x <- AWQMSdata::unit_conv(x,c("Calcium","Chloride","Magnesium","Potassium","Sodium","Sulfate","Organic carbon","Total Sulfate","Sulfide"),"ug/l","mg/l")
+  x <- AWQMSdata::unit_conv(x,c("Alkalinity, total","Calcium","Chloride","Magnesium","Potassium","Sodium","Sulfate","Organic carbon","Total Sulfate","Sulfide"),"ug/l","mg/l")
   x <- AWQMSdata::unit_conv(x,"Copper","mg/l","ug/l")
 
 
